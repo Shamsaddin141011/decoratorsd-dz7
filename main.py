@@ -11,7 +11,7 @@ safe_calculator
 def calculate(expression):
     return eval(expression)
 
-def calculator_loop():
+def calculator():
     while True:
         expression = input("Enter expression: ").strip()
         if expression.lower() == 'exit':
@@ -23,5 +23,5 @@ def calculator_loop():
         except Exception as e:
             print(f"Error: {e}")
 
-# Start the calculator loop
-calculator_loop()
+
+calculator()
